@@ -1,0 +1,51 @@
+{"intents": [
+  {"tag": "Dengue Fever",
+   "patterns": ["high fever", "headaches", "Pain behind the eyes", "muscle pain", "Fatigue", "Nausea","Vomiting","Mild bleeding","skin rash"],
+   "responses": ["1->Medication: Painkillers like Tylenol or Paracetamol are generally prescribed to the patients. IV drips are sometimes supplemented in case of severe dehydration. 2->Stay hydrated: This is crucial as most of our bodily fluids are lost during vomiting and high fever. Continuous intake of fluids will make sure that the body does not easily dehydrate. 3->Hygiene: Hygiene is of the utmost importance, even more so when you are not well. The patient can opt for a sponge bath if not a regular bath. Add a few drops of disinfectant liquid like Dettol to the water being used for bathing. It is also advisable to sanitize your hand with a hand sanitizer like Dettol before and after visiting the patient in the hospital. Disinfect the water used to wash the patient’s clothes with Dettol to rid the clothes of germs."],
+   "medicine":["Acetaminophen (paracetamol) is recommended for treatment of pain and fever. Aspirin, other salicylates, and nonsteroidal anti-inflammatory drugs (NSAIDs) should be avoided."],
+   "context_set": ""
+  },
+  {"tag": "Typhoid fever",
+   "patterns": ["Stomach pain", "Weakness", "Headache", "Diarrhea or constipation","Cough","Loss of appetite"],
+   "responses": ["1->Receiving a typhoid fever vaccination. Currently, two vaccines are available to help prevent the spread of typhoid fever. Talk with your doctor about getting vaccinated. 2->Avoiding food that is raw or undercooked 3->Drinking only bottled water or water that has been boiled 4->Thoroughly washing your hands each time before eating 5->Avoiding raw fruits and vegetables that cannot be peeled. 6->Avoiding eating foods and beverages purchased from street vendors."],
+   "medicine":["1->Ciprofloxacin (Cipro).doctors often prescribe this for adults who aren't pregnant. Another similar drug called ofloxacin also may be used. Unfortunately, many Salmonella typhi bacteria are no longer susceptible to antibiotics of this type. 2->Azithromycin (Zithromax). This may be used if a person is unable to take ciprofloxacin or the bacteria are resistant to ciprofloxacin. 3->Ceftriaxone. This injectable antibiotic is an alternative in more-complicated or serious infections and for people who may not be candidates for ciprofloxacin, such as children."],
+   "context_set": ""
+  },
+  {"tag": "Jaundice",
+   "patterns": ["Fever","Chills","Abdominal pain","Flu-like symptoms","Change in skin color","yellow color","Dark-colored urine and/or clay-colored stool"],
+   "responses": ["1->Ensuring not to exceed the recommended daily amount (RDA) for alcohol consumption. 2->Maintaining a healthy weight for height and build. 3->Vaccination against hepatitis A and hepatitis B. 4->Avoid high-risk behaviours such as intravenous drug use. 5->Avoid potentially contaminated food/water and maintain good hygiene. 6->Avoid medications and toxins which can cause hemolysis or directly damage the liver."],
+   "medicine":["Hepa-Cure Capsule, A.K.A Chemicals Pvt Ltd. 2->Hashmi Jaundinil Capsule, Grade Standard"],
+   "context_set": ""
+  },
+  {"tag": "Thyroid",
+   "patterns": ["Fatigue", "Increased sensitivity to cold", "Constipation","Dry skin","Weight gain","Puffy face","Muscle weakness","Slowed heart rate","Enlarged thyroid gland goiter","goiter","Pain, stiffness or swelling in your joints","Muscle aches, tenderness and stiffness"],
+   "responses": ["1->Avoid Processed Food:A lot of chemicals can alter the thyroid hormone production. One needs to avoid any kind of processed food; they are on the edge of the thyroid disorder. 2->Avoid Soy:Limit the soy intake as it alters the hormone production. 3->Stop Smoking:The toxins released during smoking can make the thyroid gland over sensitive which can lead to thyroid disorders. 4->Reduce Stress:Stress is one of the major contributors in many health disorders including thyroid disease."],
+   "medicine":["1->Westhroid 2->Armour Thyroid (Pro) 3->Cytomel (Pro) 4->Levoxyl (Pro)"],
+   "context_set": ""
+  },
+  {"tag": "Diabetes",
+   "patterns": ["Hunger","fatigue", "Peeing more often and being thirstier","Dry mouth","itchy skin","Blurred vision","Pain or numbness in your feet or legs"],
+   "responses": ["1->Check your risk of diabetes 2->Manage your weight 3->Exercise regularly 4->Eat a balanced, healthy diet 5->Limit takeaway and processed foods 6->Limit your alcohol intake 7->Quit smoking 8->Control your blood pressure 9->Reduce your risk of cardiovascular disease"],
+   "medicine":["1->Insulin 2->Amylinomimetic drug 3->Alpha-glucosidase inhibitors"],
+   "context_set": ""
+  },
+  {"tag": "Bipolar disorder",
+    "patterns": ["feeling sad, hopeless or irritable most of the time total","lacking energy","difficulty concentrating and remembering things","loss of interest in everyday activities","feelings of emptiness or worthlessness","feelings of guilt and despair","being delusional, having hallucinations and disturbed or illogical thinking"],
+    "responses": ["medication to prevent episodes of mania, hypomania (less severe mania) and depression – these are known as mood stabilisers and are taken every day on a long-term basis medication to treat the main symptoms of depression and mania when they occur learning to recognise the triggers and signs of an episode of depression or mania psychological treatment – such as talking therapies, which help you deal with depression and provide advice on how to improve relationships lifestyle advice – such as doing regular exercise, planning activities you enjoy that give you a sense of achievement, and advice on improving your diet and getting more sleep"],
+    "medicine":["1->Mood stabilizers 2->Antipsychotics 3->Antidepressants 4->Antidepressant-antipsychotic 5->Anti-anxiety medications"],
+    "context_set": ""
+   },
+   {"tag": "Asthama",
+    "patterns": ["wheezing","a whistling sound when you breathe","shortness of breath","a tight chest – which may feel like a band is tightening around it","coughing","breathing faster"],
+    "responses": ["1->Stay Away From Allergens  2->Avoid Smoke of Any Type 3->Prevent Colds 4->Allergy-Proof Your Home 5->Get Your Vaccinations 6->Consider Immunotherapy Allergy Shots 7->Take Asthma Medications as Prescribed 8->Use a Home Peak Flow Meter"],
+    "medicine":["1->Metaproterenol 2->Prednisone; methylprednisolone; prednisolone 3->Epinephrine"],
+    "context_set": ""
+   },
+   {"tag": "Diarrhea",
+    "patterns": ["Loose, watery stools", "Abdominal cramps","Abdominal pain", "Blood in the stool", "Mucus in the stool","Bloating","Nausea","Urgent need to have a bowel movement"],
+    "responses": ["1->Hydration 2->Probiotics 3->Stick to low-fiber “BRAT” foods 4->Fried and greasy foods are usually not well-tolerated in people who have diarrhea"],
+    "medicine":["1->bismuth subsalicylate (Pepto-Bismol and Kaopectate) 2->loperamide (Imodium). While these drugs can relieve the symptoms of diarrhea, they don’t treat the underlying cause."],
+    "context_set": ""
+   }
+]
+}
