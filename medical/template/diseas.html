@@ -1,0 +1,160 @@
+{%load static %}
+<html>
+    <header>
+        <nav class="navbar">
+            <a style="margin-left: 3%;" class="navfont" href="{% url 'home' %}"><img style="height: 60px;width:80px;padding-top:8px" src="{% static 'home.png' %}"></a>
+            <a style="margin-top: 1%;margin-left:30%" class="navfont" href="{% url 'diseas' %}">Diseas Analyzer</a>
+        </nav>
+    </header>
+    <br>
+    <body>
+        <div class="main" style="background-image:url({% static 'wall2.jpg' %})">
+            <div class="first">
+                <div class="first1">
+                    <div class="first11">
+                        <center><u style="font-size: x-large;">Information</u></center>
+                        <br>
+                        <br>
+                        <div >
+                            <label class="fontstyle">{{precaution}}</label>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+                <div class="first2">
+                    <div class="first11">
+                        <center><u style="font-size: x-large;">Preferred Medicine</u></center>
+                        <br>
+                        <div >   
+                            
+                            <label class="fontstyle">{{medicine}}</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="second">
+                <font style="font-size:xxx-large;">{{diseas_name}}</font>
+                <div class="second1">
+                    <br>
+                    <form class="forms" method='post' action="{% url 'diseas_analyser' %}">
+                        {% csrf_token %}
+                        <textarea class="inputcls" name="symptoms" type="text"></textarea>
+                        <br>
+                        <br>
+                        <button class="button1" type="submit" value="Submit"  >Search</button>
+                    </form>  
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+<!-- ############################ CSS ########################## -->
+<style>
+    .navbar{
+        background-color: rgb(0, 0, 0);
+        height: 80px;  
+        display: flex;
+    }
+    .navfont{
+        color: rgb(252, 248, 248);
+        padding-bottom: 20px; 
+        font-size: xx-large;
+    }
+    .main{
+        display: flex;
+        
+        
+        
+    }
+    .first{
+        height: 100%;
+        width: 65%;
+        margin: 15px;
+        color: rgb(21, 23, 24);
+        margin-top: 20px;
+
+    }
+    .first1{
+        background-color: rgb(255, 255, 255);
+        padding: 10px;
+        border-radius: 20px;
+        height: 250px;
+        justify-content: space-evenly;
+        
+    }
+    .first11{
+        padding-left: 20px;
+        padding-right: 20px;
+       
+    }
+    .fontstyle{
+        font-size: large;
+        overflow-wrap: break-word;
+        font-size:1.3vw;
+        
+    }
+    .first2{
+        background-color: rgb(255, 255, 255);
+        margin-top: 10px;
+        border-radius: 20px;
+        height: 210px;
+        justify-content: space-evenly;
+        font-size: x-large;
+    }
+    .second{
+        background-color: #ffffff;
+        height: 460px;
+        width: 27%;
+        border-radius: 20px;
+        margin: 10px;
+        padding: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        text-align: center;
+
+    }
+    .second1{
+        background-color: rgb(177, 172, 182);
+        width: 92%;
+        height: 88%;
+        padding-top: 5px;
+        margin: auto;
+        border-radius: 20px;
+        }
+    .button1 {
+        background-color: #ffffff; 
+        color:#000000;
+        border: none;
+        border: 2px solid  #1d54bb;
+        height:10%;
+        width: 90%;
+        border-radius: 5px;
+        font-size:2vw;
+        font-family: monospace;
+      }
+      
+    .button1:hover {
+        background-color: #1d54bb;
+        color:#ffffff;
+      }
+    .inputcls{
+        width: 90%;
+        height: 60%;
+        border: 2px solid rgb(247, 242, 242);
+        border-radius: 20px;
+        font-family: monospace; /* Make font the same as for the textarea */
+        font-size: 20px;
+        line-height: 1.2; /* 1.2 times 16 is 19.2, round it to 20 */
+        resize: none;
+    }
+    .inputcls:focus{
+        outline: none;
+    }
+
+</style>
+

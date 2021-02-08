@@ -1,0 +1,37 @@
+{%load static%}
+<html>
+    <header>
+        <nav class="navbar">
+            <a style="margin-left: 3%;" class="navfont" href=""><img style="height: 60px;width:80px" src="{% static 'home.png' %}"></a>
+            <a style="margin-left: 35%;" class="navfont" href=""><img style="height: 70px;width:100px" src="{% static 'doct.png' %}"></a>
+        </nav>
+    </header>
+    <br>
+    <body>
+        <div style="background-image:url({% static 'wall.jpg' %});height:85%">
+            <div class="main">
+                <a href="{% url 'diseas' %}" style="width:20%;height:20%;padding-right:20px"><img class="image" src="{% static 'doctor.png' %}"></a>
+                <!-- <img href="" class="image" src="{% static 'medical.png' %}"> -->
+                <a href="{% url 'index' %}" style="width:20%;height:20%;padding-left:20px"><img class="image" src="{% static 'first-aid.png' %}"></a>
+            </div>
+        </div>
+    </body>
+</html>
+
+<style>
+    .navbar{
+        background-color: rgb(0, 0, 0);
+        height: 80px;  
+    }
+
+    .main{
+        padding-top: 10%;
+        display: flex;
+        justify-content:center;
+    }
+    
+    .image{
+        width: 100%;
+
+    }
+</style>
