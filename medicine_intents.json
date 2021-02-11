@@ -1,0 +1,47 @@
+{"intents": [
+  {"tag": "Blood_Recovery, Iron Deficiency",
+   "patterns": ["hematinic syrup of iron", "hematinic", "hematinic syrup of iron folic acid and vitamin b12", "folic acid and vitamin b12", "iron folic acid", "folic acid and vitamin b12","dexorange"],
+   "responses": ["Helps in the treatment of general weakness and recovery post illness/infection. Helps in restoring iron levels post-surgery and in other debilitating conditions such as malabsorption"],
+   "context_set": ""
+  },
+  {"tag": "Fever",
+   "patterns": ["paracetamol","nimesulide and paracetamol tablets","nimudec plus","nimudec","nimesulide", "paracip-500", "paracetamo", "paracetam"],
+   "responses": ["This drug is used to treat mild to moderate pain (from headaches, toothaches, backaches, osteoarthritis, or cold/flu aches and pains) and to reduce fever."],
+   "context_set": ""
+  },
+  {"tag": "Anti-Bacterial, Anti-Fungal, Anti-Inflammatory",
+   "patterns": ["clobeta", "ketoconazole", "povidone-iodine ointment","povidone", "cipladine", "clobetasol propionate neomycin sulphate"],
+   "responses": ["This medication is used to treat a variety of skin conditions (e.g., eczema, psoriasis, dermatitis, allergies, rash). Clobetasol reduces the swelling, itching, and redness that can occur in these types of conditions. This medication is a very strong (super-high-potency) corticosteroid."],
+   "context_set": ""
+  },{"tag": "Ulcers",
+   "patterns": ["emetac","ranitidine hydrochloride tablet","Emetac 150","orasore","chlorine salicylate", "chlorine salicylate & lignocaine", "chlorine salicylate & lignocaine hydrolic gel", "lignocaine hydrolic gel"],
+   "responses": ["It is Mouth Ulcer Relief Salt provides fast relief from severe pain & irritation, caused by mouth ulcers,within 2 minutes. It also provides relief from pain and swelling of the ulcers and has an antibacterial preservative too."],
+   "context_set": ""
+  },
+  {"tag": "Indigestion",
+   "patterns": ["omeprazole and domperidone", "omeprazole", "domperidone"],
+   "responses": [" Domperidone is a prokinetic which works on the upper digestive tract to increase the movement of the stomach and intestines, allowing the food to move more easily through the stomach. Omeprazole is a proton pump inhibitor (PPI) which works by reducing the amount of acid in the stomach which helps in the relief of acid-related indigestion and heartburn."],
+   "context_set": ""
+  },
+  {"tag": "Headache",
+   "patterns": ["disprine","saridon","disprin", "Aspirin"],
+   "responses": ["For the relief of mild to moderate pain in headaches, including migraine headaches, toothache, neuralgia, sciatica, period pains and sore throats. Reduction of temperature in feverishness, influenza and colds. Reduction of inflammation in rheumatism and lumbago. Oral administration after dissolution in water."],
+   "context_set": ""
+  },
+  {"tag": "Cold, Cough",
+    "patterns": ["dcold total","cetirizine hydrochloride","phenylephrine hydrochloride","crtfast cold new","cetfast"],
+    "responses": ["Tablet is a combination medicine used in the treatment of common cold symptoms. It provides relief from symptoms such as runny or blocked nose, sneezing, sore throat, cough, body ache and mild fever, and low-grade fever"],
+    "context_set": ""
+   },
+   {"tag": "Skin-Infections",
+    "patterns": ["oneclav-625","oneclave","oneclav","amoxycillin and potassium clavulanate"],
+    "responses": ["It is used to stop or treat certain bacterial infections, such as infections of the ears, nose, throat, urinary tract and skin."],
+    "context_set": ""
+   },
+   {"tag": "Anti-Bacterial",
+    "patterns": ["ofloxacin","zoflacin"],
+    "responses": ["It is commonly given to children for the treatment of a wide range of bacterial infections targeting the ear, eyes, nose, throat, lungs, skin, and gastrointestinal tract."],
+    "context_set": ""
+   }
+]
+}
